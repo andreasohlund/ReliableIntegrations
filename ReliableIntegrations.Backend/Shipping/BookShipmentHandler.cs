@@ -1,5 +1,6 @@
 namespace ReliableIntegrations.Backend.Sales
 {
+    using System;
     using Contracts;
     using Fedex;
     using NServiceBus;
@@ -13,6 +14,8 @@ namespace ReliableIntegrations.Backend.Sales
         {
             var trackingCode = Fedex.BookPickup(message.OrderId);
 
+            //if (message.GetHeader("NServiceBus.Retries") == null)
+            //    throw new Exception("Http timeout");
             Bus.Reply<ShipmentBooked>(m =>
                 {
                     m.OrderId = message.OrderId;

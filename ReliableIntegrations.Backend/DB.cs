@@ -7,7 +7,7 @@ namespace ReliableIntegrations.Backend
     {
         public static void Save(Order order)
         {
-            throw new Exception("Database rollback");
+            //throw new Exception("Database rollback");
             Console.Out.WriteLine("Order with id {0} saved, status: {1}", order.Id, order.Status);
         }
 

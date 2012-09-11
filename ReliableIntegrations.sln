@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReliableIntegrations.Tests", "ReliableIntegrations.Tests\ReliableIntegrations.Tests.csproj", "{0E69F4EA-B97F-49D6-B9E9-90FF26E3FCCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReliableIntegrations.Backend", "ReliableIntegrations.Backend\ReliableIntegrations.Backend.csproj", "{CB124C3E-AD03-4549-AF60-44D499D07F48}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0E69F4EA-B97F-49D6-B9E9-90FF26E3FCCD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E69F4EA-B97F-49D6-B9E9-90FF26E3FCCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E69F4EA-B97F-49D6-B9E9-90FF26E3FCCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E69F4EA-B97F-49D6-B9E9-90FF26E3FCCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CB124C3E-AD03-4549-AF60-44D499D07F48}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CB124C3E-AD03-4549-AF60-44D499D07F48}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CB124C3E-AD03-4549-AF60-44D499D07F48}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CB124C3E-AD03-4549-AF60-44D499D07F48}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

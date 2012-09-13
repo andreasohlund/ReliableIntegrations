@@ -9,6 +9,7 @@ namespace ReliableIntegrations.Backend.Sales
     {
         public IFedexProxy Fedex { get; set; }
 
+        // A first stab at the problem
         //public void Handle(PlaceOrder message)
         //{
         //    var order = new Order { Id = message.OrderId };
@@ -20,14 +21,16 @@ namespace ReliableIntegrations.Backend.Sales
         //    DB.Save(order);
         //}
 
+        //the messaging way
         public void Handle(PlaceOrder message)
         {
+            Bus.Send<BookShipment>(m => m.OrderId = message.OrderId);
+
             DB.Save(new Order
                 {
                     Id = message.OrderId,
                     Status = OrderStatus.Accepted
                 });
-            Bus.Send<BookShipment>(m => m.OrderId = message.OrderId);
         }
 
         public IBus Bus { get; set; }

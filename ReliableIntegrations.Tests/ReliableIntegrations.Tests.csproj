@@ -59,6 +59,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PlaceAFailingOrder.cs" />
     <Compile Include="IntegrationTest.cs" />
     <Compile Include="PlaceANewOrder.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

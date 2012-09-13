@@ -9,6 +9,8 @@ namespace ReliableIntegrations.Backend.Fedex
     {
         public string BookPickup(Guid orderId)
         {
+            Console.Out.WriteLine("Fedex: Pickup booked for order {0}", orderId);
+            return Guid.NewGuid().ToString();
             if (!shippingCodes.ContainsKey(orderId))
             {
                 Console.Out.WriteLine("Fedex: Pickup booked for order {0}", orderId);

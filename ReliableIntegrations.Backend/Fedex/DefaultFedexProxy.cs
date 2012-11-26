@@ -16,6 +16,10 @@ namespace ReliableIntegrations.Backend.Fedex
                 Console.Out.WriteLine("Fedex: Pickup booked for order {0}", orderId);
                 shippingCodes[orderId] = Guid.NewGuid().ToString();
             }
+            else
+            {
+                Console.Out.WriteLine("Fedex: Retry detected for order {0}",orderId);
+            }
             return shippingCodes[orderId];
        }
 

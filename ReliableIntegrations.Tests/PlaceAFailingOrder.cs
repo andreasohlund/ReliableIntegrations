@@ -1,6 +1,7 @@
 namespace ReliableIntegrations.Tests
 {
     using System;
+    using Backend;
     using Backend.Contracts;
     using NServiceBus;
     using NUnit.Framework;
@@ -12,7 +13,7 @@ namespace ReliableIntegrations.Tests
         {
             Bus.Send<PlaceOrder>(m =>
                 {
-                    m.OrderId = Guid.Empty;
+                    m.OrderId = DB.GuidToSimulateDBRollback;
                 });
         }
     }
